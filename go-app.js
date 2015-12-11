@@ -132,7 +132,7 @@ go.app = function() {
 
         self.states.add('states:competition_car', function(name){
             return new ChoiceState(name,{
-                question: '2015 Festive Car Competition\n\nPurchase Grocery worth more thanR 400\nand stand a chance to WIN a car\n',
+                question: '2015 Festive Car Competition\n\nPurchase Grocery worth R 400 or more\nand stand a chance to WIN a car\n',
  
                 choices: [
                     new Choice('states:competition_monthly', 'Monthly Grocery Competition'),
@@ -147,7 +147,7 @@ go.app = function() {
 
         self.states.add('states:competition_monthly', function(name){
             return new EndState(name,{
-                text: 'Win a Busket filled with Grocery every month by\nparticipating on out weekly surveys\nListen to Qwaqwa Radio for more details.',
+                text: 'Win a Busket filled with Grocery every month by\nparticipating on our weekly surveys\nListen to Qwaqwa Radio for more details.',
                 next: 'states:main'
             });
         });

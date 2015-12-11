@@ -139,7 +139,7 @@ describe("app", function() {
                         state: 'states:competition_car',
                         reply: [
 
-                            '2015 Festive Car Competition\n\nPurchase Grocery worth more thanR 400\nand stand a chance to WIN a car\n',
+                            '2015 Festive Car Competition\n\nPurchase Grocery worth R 400 or more\nand stand a chance to WIN a car\n',
                             '1. Monthly Grocery Competition',
                             '2. Back to Main menu',
                             '3. Exit'
@@ -156,7 +156,7 @@ describe("app", function() {
                     .input('2')
                     .check.interaction({
                         state: 'states:competition_monthly',
-                        reply: 'Win a Busket filled with Grocery every month by\nparticipating on out weekly surveys\nListen to Qwaqwa Radio for more details.'
+                        reply: 'Win a Busket filled with Grocery every month by\nparticipating on our weekly surveys\nListen to Qwaqwa Radio for more details.'
                     })
                     .run();
             });
